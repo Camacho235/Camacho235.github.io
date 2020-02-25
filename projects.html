@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alexis Camacho | Home Page</title>
+    <link href="/homeStyle.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1 class="topnav-elements main-topnav-element"> Alexis Camacho </h1>
+
+      <div class="top-links">
+        <h2 class="topnav-elements">
+          <a href="/home"> Home </a>
+        </h2>
+
+        <h2 class="topnav-elements">
+          <a href="/about_me"> About Me </a>
+        </h2>
+
+        <h2 class="topnav-elements">
+          <a href="/experience"> Experience </a>
+        </h2>
+
+        <h2 class="topnav-elements">
+          <a href="/projects"> Projects </a>
+        </h2>
+      </div>
+
+    </header>
+
+    <div class="mainBody">
+        <div class="content-block">
+            <div class="gamelab-title">
+                <p> Personal Website </p>
+            </div>
+            <p>
+                Created a personal website using NodeJS, HTML, CSS and AWS. This current website is the one I am speaking of. <br>
+                All the server code is in NodeJS, and can be found in github. The responses from the website are basic, it is a static website.
+                I am using this project as a stepping stone in developing a dynamic web application for end-to-end encrypted communications. <br>
+                All HTML and CSS were written by me.
+
+            </p>
+
+            <div class="skill-summary">
+                <p>
+                    Skills required
+                </p>
+                <ul>
+                    <li> AWS </li>
+                    <li> NodeJS </li>
+                    <li> Javascript </li>
+                    <li> HTML </li>
+                    <li> CSS </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="gamelab-title">
+                <p> End-to-end encrypted messaging system </p>
+            </div>
+            <p>
+                I have an interest with computer security, as well as privacy. So, I decided to create this encrypted chat service to reflect on that
+                , as well as gain experience in cryptography, web development, and web security. <br>
+            </p>
+
+            <div class="skill-summary listing">
+                <p>
+                    The Threat Model
+                </p>
+                <ul>
+                    <li> Server can not be trusted. </li>
+                    <li> Nation state actors sniffing network. </li>
+                    <li> DDOS attacks. </li>
+                    <li> DNS spoofing. </li>
+                    <li> Nation states actively blocking access. </li>
+                    <li> Phishing/XSS attacks/CSRF attacks.</li>
+                    <li> Client themselves are vunerable. </li>
+                </ul>
+            </div>
+
+            <p>
+                The design of the system was made with this threat model in mind. <br>
+                Servers are always being exploited into, therefore, we must assume that the server is compromised at all times to ensure that users are kept safe.
+                One of the most basic things that the server must do, is to keep all data encrypted on the server, with the users only having the ability to
+            </p>
+
+            <p>
+                Server cannot be trusted <br>
+                In the event that the server is compromised, we want users to still be able to send and recieve messages while still having their identity anon.
+                Additionally, messages sent should be confidential, and need to preserve intergity. </br>
+                Therefore, encryption happens on the user's end. The client only ever sends encypted data to the server, on top of TLS. All data is then
+                recieved by the end user, who verifies and decrypts the data. <br>
+
+                Privilege Seperation<br>
+                Services should be serperated based on the idea of least privilege. <br>
+                If one service is exposed, others are not. <br>
+                All services should talk via TLS. Example NSA Snowden leaks. <br>
+
+                What about server sending things out of order? Prevent messages being sent <br>
+
+                Idea: Order the messages, computationally impossible to try to reodrder messages. <br>
+                Idea 2: Give clients/users a time stamp like TLS certificates. Where messages can time out. <br>
+                Idea 3: Check for duplicates. <br>
+
+
+                Ultimately, the server can deny service. Example: China and telegram<br>
+                Can we do something about that? What about creating a peer to peer network? Use optional peer to peer?
+                
+
+
+
+            </p>
+
+            <div class="skill-summary">
+                <p>
+                    Skills required
+                </p>
+                <ul>
+                    <li> AWS </li>
+                    <li> NodeJS </li>
+                    <li> Javascript </li>
+                    <li> HTML </li>
+                    <li> CSS </li>
+                    <li> WPF </li>
+                    <li> .NET </li>
+                    <li> Java </li>
+                    <li> cryptography </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <div class="social-entry">
+                <a href="https://github.com/Camacho235"> Github </a>
+            </div>
+
+            <div class="social-entry">
+                LinkedIn
+            </div>
+
+            <div class="social-entry">
+                Other
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
