@@ -62,7 +62,8 @@ a:active {
 }
 
 .content-block {
-    display: inline-block;
+    display: flex;
+    padding: 20px;
     margin: 30px;
     width: 80%;
     min-height: 300px;
