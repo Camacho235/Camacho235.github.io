@@ -1,245 +1,237 @@
-
 body {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .main-header {
-  background-color: black;
-  overflow: hidden;
-  display: block;
-  height: 100px;
-  white-space: nowrap;
+background-color: black;
+overflow: hidden;
+display: block;
+height: 100px;
+white-space: nowrap;
 
 }
 
 .main-header h1
 {
-  display: inline-block;
-  float: left;
-  margin: 25px 10px 10px 40px;
-  color: white;
-  font-family: 'Press Start 2P', cursive;
+display: inline-block;
+float: left;
+margin: 25px 10px 10px 40px;
+color: white;
+font-family: 'Press Start 2P', cursive;
 
 
 }
 
 .main-header h2 {
-  display: inline-block;
-  float: left;
-  margin-right: 50px;
-  font-family: 'Quicksand', sans-serif;
+display: inline-block;
+float: left;
+margin-right: 50px;
+font-family: 'Quicksand', sans-serif;
 }
 
 a:link {
-  color: silver;
+color: silver;
 }
 
 /* visited link */
 a:visited {
-  color: silver;
+color: silver;
 }
 
 /* mouse over link */
 a:hover {
-  color: white;
+color: white;
 }
 
 /* selected link */
 a:active {
-  color: orange;
+color: orange;
 }
 
 .top-links
 {
-    display: inline-block;
-    float: right;
+  display: inline-block;
+  float: right;
 }
 
 .mainBody {
-    background-image: url("example.jpg");
-    min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("example.jpg");
+  
 }
 
 .content-block {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin: 30px;
-    width: 80%;
-    min-height: 300px;
-    border: 3px solid darkgray;
-    background-color: silver;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 30px;
+  width: 80%;
+  min-height: 300px;
+  border: 3px solid darkgray;
+  background-color: silver;
+  border-radius: 20px;
 }
 
 .content-block p {
-    margin: 20px 30px 20px 30px;
-    text-align: left;
-    font-size: 20pt;
-    font-family: Georgia;
-    line-height: 50px;
-    overflow: hidden;
+  margin: 20px 30px 20px 30px;
+  text-align: left;
+  font-size: 20pt;
+  font-family: Georgia;
+  line-height: 50px;
+  overflow: hidden;
 }
 
-.gamelab-title
+.content-title
 {
-    display: inline;
-    height: 200px;
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+  align-items: center;
 }
 
-.gamelab-title p {
-    text-align: center;
-    font-size: 30pt;
+.content-title p {
+  text-align: center;
+  vertical-align: center;
+  font-size: 30pt;
 }
 
-.gamelab-title img {
-    display: inline-block;
-    clear: both;
-    max-height: 25%;
-    max-width: 25%;
-    margin-top: 20px;
+.content-title img {
+  max-height: 25%;
+  max-width: 25%;
+  margin-top: 20px;
 }
 
 
 .bae-title
 {
-    display: inline;
-    font-weight: bold;
-    background-color: red;
-    color: white;
-}
-
-.bae-title img {
-    margin-top: 20px;
-    display: inline-block;
-    clear: both;
-    max-width: 35%;
-    max-height: 35%;
-}
-
-.bae-title p {
-    text-align: center;
+  display: inline;
+  font-weight: bold;
+  background-color: red;
+  color: white;
 }
 
 .photo {
-    display: inline-block;
-    max-width: 1500px;
-    min-height: 400px;
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  min-height: 400px;
 }
 
 .photo img {
-    display: inline-block;
-    margin: 20px 20px 20px 20px;
-    max-width: 30%;
-    min-width: 30%;
+  display: inline-block;
+  margin: 20px 20px 20px 20px;
+  max-width: 30%;
+  min-width: 30%;
 }
 .skill-summary {
-    margin-left: 50px;
-    margin-bottom: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 .skill-summary p{
-    text-align: left;
-    font-size: 22pt;
+  text-align: left;
+  font-size: 22pt;
 }
 
 .skill-summary li{
-    font-size: 18pt;
-    float: left;
-    clear: both;
+  font-size: 18pt;
+  float: left;
+  clear: both;
 }
 
 .listing {
-    display: block;
-    clear: both;
+  display: block;
+  clear: both;
 }
 footer {
-    display: inline-block;
-    height: 100px;
-    width: 100%;
-    background-color: Black;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  background-color: Black;
 }
 
 .social-media {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .social-entry {
 
-    display: inline-block;
-    margin-right: 50px;
+  display: inline-block;
+  margin-right: 50px;
 
-    color: white;
-    font-size: 20pt;
-    font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 20pt;
+  font-family: 'Quicksand', sans-serif;
 
 }
 
 .social-entry a:link {
-  text-decoration: none;
-  color: white;
+text-decoration: none;
+color: white;
 }
 
 /* visited link */
 .social-entry a:visited {
-  text-decoration: none;
-  color: white;
+text-decoration: none;
+color: white;
 }
 
 /* mouse over link */
 .social-entry a:hover {
-  color: lightgray;
+color: lightgray;
 }
 
 /* selected link */
 .social-entry a:active {
-  color: orange;
+color: orange;
 }
 
 @media (max-width: 900px) {
-  .main-header {
-      height: auto;
-  }
-  .main-header h1
-  {
-      display: block;
-  }
-  /* CSS that should be displayed if width is equal to or less than 800px goes here */
-  .main-header h2 {
-    display: inline-block;
-    margin-right: 30px;
-  }
+.main-header {
+    height: auto;
+}
+.main-header h1
+{
+    display: block;
+}
+/* CSS that should be displayed if width is equal to or less than 800px goes here */
+.main-header h2 {
+  display: inline-block;
+  margin-right: 30px;
+}
 }
 
 @media (max-width: 650px) {
-  /* might be a phone */
-  .main-header {
-      height: auto;
-  }
+/* might be a phone */
+.main-header {
+    height: auto;
+}
 
-  .top-links {
-      display: block;
-      margin: auto;https://github.com/Camacho235
-      float:none;
-      margin: 20px, 0px, 20px, 0px;
-      height: auto;
-      width: 50%;
-      padding: 10px;
-  }
-  .main-header h1
-  {
-      display: block;
-      margin: auto;
-      width: 50%;
-      padding: 10px;
-  }
-  .main-header h2 {
-      display: block;
-      clear:both;
-      margin: auto;
-      float: none;
-      width: 50%;
-      padding: 10px;
+.top-links {
+    display: block;
+    margin: auto;https://github.com/Camacho235
+    float:none;
+    margin: 20px, 0px, 20px, 0px;
+    height: auto;
+    width: 50%;
+    padding: 10px;
+}
+.main-header h1
+{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.main-header h2 {
+    display: block;
+    clear:both;
+    margin: auto;
+    float: none;
+    width: 50%;
+    padding: 10px;
 
-  }
 }

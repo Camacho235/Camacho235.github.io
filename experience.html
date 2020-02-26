@@ -26,8 +26,8 @@
 
     <div class="mainBody">
         <div class="content-block">
-            <div class="gamelab-title">
-                <img src="gamelab.jpg"/>
+            <div class="content-title">
+                <img src="http://news.mit.edu/sites/mit.edu.newsoffice/files/images/2012/20121023102933-1_0_0.jpg"/>
                 <p> MIT Game Lab | Programmer </p>
             </div>
             <p>
@@ -75,8 +75,8 @@
         </div>
 
         <div class="content-block">
-            <div class="bae-title">
-                <img src="bae.jpg"/>
+            <div class="content-title">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/BAE_Systems_logo.svg/800px-BAE_Systems_logo.svg.png"/>
                 <p> BAE Systems | Technical Intern III </p>
             </div>
             <p>
@@ -108,8 +108,11 @@
         </div>
 
         <div class="content-block">
+            <div class="content-title">
+                <p> MIT LNS - Laboratory of Nuclear Science </p>
+            </div>
+
             <p>
-                MIT LNS - Laboratory of Nuclear Science <br>
                 During my first summer at MIT, I was considering a background in Physics and Computer Science. I would eventually realize, I did not have much time
                 for Physics. This experience reflects on that consideration. <br>
                 My task for this research project was to identify beauty and charm particles though statistical methods, mainly through the use of fitting histrograms
@@ -131,8 +134,6 @@
             </div>
 
         </div>
-
-
     </div>
 
     <footer>
@@ -150,3 +151,250 @@
     </footer>
   </body>
 </html>
+
+<style>
+
+
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.main-header {
+  background-color: black;
+  overflow: hidden;
+  display: block;
+  height: 100px;
+  white-space: nowrap;
+
+}
+
+.main-header h1
+{
+  display: inline-block;
+  float: left;
+  margin: 25px 10px 10px 40px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+
+
+}
+
+.main-header h2 {
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+a:link {
+  color: silver;
+}
+
+/* visited link */
+a:visited {
+  color: silver;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+}
+
+/* selected link */
+a:active {
+  color: orange;
+}
+
+.top-links
+{
+    display: inline-block;
+    float: right;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("example.jpg");
+    
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 30px;
+    width: 80%;
+    min-height: 300px;
+    border: 3px solid darkgray;
+    background-color: silver;
+    border-radius: 20px;
+}
+
+.content-block p {
+    margin: 20px 30px 20px 30px;
+    text-align: left;
+    font-size: 20pt;
+    font-family: Georgia;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.content-title
+{
+    display: flex;
+    justify-content: center;
+    max-height: 200px;
+    align-items: center;
+}
+
+.content-title p {
+    text-align: center;
+    vertical-align: center;
+    font-size: 30pt;
+}
+
+.content-title img {
+    max-height: 25%;
+    max-width: 25%;
+    margin-top: 20px;
+}
+
+
+.bae-title
+{
+    display: inline;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    min-height: 400px;
+}
+
+.photo img {
+    display: inline-block;
+    margin: 20px 20px 20px 20px;
+    max-width: 30%;
+    min-width: 30%;
+}
+.skill-summary {
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+.skill-summary p{
+    text-align: left;
+    font-size: 22pt;
+}
+
+.skill-summary li{
+    font-size: 18pt;
+    float: left;
+    clear: both;
+}
+
+.listing {
+    display: block;
+    clear: both;
+}
+footer {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    background-color: Black;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-entry {
+
+    display: inline-block;
+    margin-right: 50px;
+
+    color: white;
+    font-size: 20pt;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.social-entry a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/* visited link */
+.social-entry a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* mouse over link */
+.social-entry a:hover {
+  color: lightgray;
+}
+
+/* selected link */
+.social-entry a:active {
+  color: orange;
+}
+
+@media (max-width: 900px) {
+  .main-header {
+      height: auto;
+  }
+  .main-header h1
+  {
+      display: block;
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+  .main-header h2 {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  /* might be a phone */
+  .main-header {
+      height: auto;
+  }
+
+  .top-links {
+      display: block;
+      margin: auto;https://github.com/Camacho235
+      float:none;
+      margin: 20px, 0px, 20px, 0px;
+      height: auto;
+      width: 50%;
+      padding: 10px;
+  }
+  .main-header h1
+  {
+      display: block;
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+  }
+  .main-header h2 {
+      display: block;
+      clear:both;
+      margin: auto;
+      float: none;
+      width: 50%;
+      padding: 10px;
+
+  }
+}
+
+
+
+</style>
