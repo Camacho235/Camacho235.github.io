@@ -63,6 +63,7 @@ a:active {
 
 .content-block {
     display: flex;
+    flex-direction: column;
     padding: 20px;
     margin: 30px;
     width: 80%;
