@@ -146,8 +146,7 @@ color: orange;
   clear: both;
 }
 footer {
-  position: absolute;
-  bottom: 0;
+  display: inline-block;
   height: 100px;
   width: 100%;
   background-color: Black;
