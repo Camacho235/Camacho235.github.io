@@ -1,50 +1,27 @@
-#page-container {
-  position: relative;
-  min-height: 100vh;
-  background-color: rgba(0,0,0,.4);
-}
-
-#content-wrap {
-  padding-bottom: 100px;
-}
-
 body {
   margin: 0;
   text-align: center;
   min-height: 100%;
-  background-image: url("./background.jpg");
-  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./background.jpg");
+  height: 100%;
+  background-position: center;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.main-header {
-background-color: black;
-overflow: hidden;
-display: block;
-height: 100px;
-white-space: nowrap;
-
+.main-content {
+  min-height: 100vh;
 }
 
-.main-header h1
-{
-display: inline-block;
-float: left;
-margin: 25px 10px 10px 40px;
-color: white;
-font-size: 40px;
-font-family: 'Quicksand', sans-serif;
-
-
+.bg-black {
+  background-color: black;
 }
 
-.main-header h2 {
-display: inline-block;
-float: left;
-margin-right: 50px;
-font-family: 'Quicksand', sans-serif;
+.wt-font {
+  color: white;
 }
+
 
 a:link {
 color: silver;
@@ -78,101 +55,18 @@ color: orange;
   align-items: center;  
 }
 
-.content-block {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  margin: 30px;
-  width: 80%;
-  min-height: 300px;
-  background-color: rgba(255,255,255,.8);
-  border-radius: 20px;
-}
-
 .content-block p {
-  margin: 20px 30px 20px 30px;
-  text-align: left;
-  font-size: 20pt;
-  font-family: Georgia;
-  line-height: 50px;
-  overflow: hidden;
+  padding: 20px;
 }
 
-.content-title
-{
-  display: flex;
-  justify-content: center;
-  max-height: 200px;
-  align-items: center;
-}
-
-.content-title p {
-  text-align: center;
-  vertical-align: center;
-  font-size: 30pt;
-}
-
-.content-title img {
-  max-height: 25%;
-  max-width: 25%;
-  margin-top: 20px;
-}
-
-
-.bae-title
-{
-  display: inline;
-  font-weight: bold;
-  background-color: red;
-  color: white;
-}
-
-.photo {
-  display: flex;
-  justify-content: center;
-}
-
-.photo img {
-  display: inline-block;
-  margin: 20px 20px 20px 20px;
-  max-width: 30%;
-  min-width: 30%;
-}
-.skill-summary {
-  margin-left: 50px;
-  margin-bottom: 30px;
-}
-.skill-summary p{
-  text-align: left;
-  font-size: 22pt;
-}
-
-.skill-summary li{
-  font-size: 18pt;
-  float: left;
-  clear: both;
-}
-
-.listing {
-  display: block;
-  clear: both;
-}
 footer {
-  position: absolute;
-  bottom: 0;
-  height: 100px;
   width: 100%;
   background-color: Black;
-}
-
-.social-media {
-  margin-top: 30px;
 }
 
 .social-entry {
 
   display: inline-block;
-  margin-right: 50px;
 
   color: white;
   font-size: 20pt;
@@ -199,51 +93,4 @@ color: lightgray;
 /* selected link */
 .social-entry a:active {
 color: orange;
-}
-
-@media (max-width: 900px) {
-.main-header {
-    height: auto;
-}
-.main-header h1
-{
-    display: block;
-}
-/* CSS that should be displayed if width is equal to or less than 800px goes here */
-.main-header h2 {
-  display: inline-block;
-  margin-right: 30px;
-}
-}
-
-@media (max-width: 650px) {
-/* might be a phone */
-.main-header {
-    height: auto;
-}
-
-.top-links {
-    display: block;
-    margin: auto;https://github.com/Camacho235
-    float:none;
-    margin: 20px, 0px, 20px, 0px;
-    height: auto;
-    width: 50%;
-    padding: 10px;
-}
-.main-header h1
-{
-    display: block;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-.main-header h2 {
-    display: block;
-    clear:both;
-    margin: auto;
-    float: none;
-    width: 50%;
-    padding: 10px;
-
 }

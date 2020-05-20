@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Alexis Camacho | {{page.title}}</title>
+    <link href="/style.css" type="text/css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <!-- Page -->
+  <body class="d-flex flex-column main-content">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <a class="navbar-brand display-1" href="/"> <h2> Alexis Camacho </h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <h3> Home</h3>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/experience.html">
+              <h3> Experience </h3>
+            </a>
+          </li>
+          
+      </div>
+    </nav>
+    
+    <div class="container-bg bg-black">
+      <div class="container">
+      </div>
+  </div>
+
+    <main class="flex-fill d-flex flex-column justify-content-around">
+      {{content}}
+    </main>
+
+    <footer class="d-flex flex-row justify-content-center p-2">
+      <div class="social-media">
+        <div class="social-entry p-3">
+          <a href="https://github.com/Camacho235"> Github </a>
+        </div>
+
+        <div class="social-entry p-3">
+          <a href="https://www.linkedin.com/in/alexis-camacho-mit"> LinkedIn </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
